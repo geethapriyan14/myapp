@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="togetherGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4f46e5" />
+      <stop offset="50%" stop-color="#7c3aed" />
+      <stop offset="100%" stop-color="#ec4899" />
+    </linearGradient>
+    <linearGradient id="bubbleGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="100%" stop-color="#f1f5f9" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="16" stdDeviation="24" flood-opacity="0.25" />
+    </filter>
+  </defs>
+  <!-- Background squircle -->
+  <rect width="512" height="512" rx="128" fill="url(#togetherGrad)" />
+  
+  <!-- Primary Chat Bubble -->
+  <g filter="url(#shadow)">
+    <path d="M140 160 C140 120, 340 120, 340 160 L340 250 C340 285, 305 310, 260 310 L200 310 L150 350 L160 310 C145 305, 140 290, 140 270 Z" fill="url(#bubbleGrad)" />
+  </g>
+  
+  <!-- Smiling / Connection dots inside bubble -->
+  <circle cx="210" cy="220" r="16" fill="#4f46e5" />
+  <circle cx="270" cy="220" r="16" fill="#7c3aed" />
+  <path d="M220 255 Q240 270 260 255" stroke="#ec4899" stroke-width="8" stroke-linecap="round" fill="none" />
+
+  <!-- Action Red Packet / Moments badge on lower right -->
+  <circle cx="360" cy="350" r="70" fill="#ef4444" stroke="#ffffff" stroke-width="8" />
+  <rect x="330" y="325" width="60" height="50" rx="8" fill="#facc15" />
+  <path d="M330 330 L360 350 L390 330" stroke="#b45309" stroke-width="4" fill="none" />
+  <circle cx="360" cy="350" r="10" fill="#dc2626" />
+</svg>

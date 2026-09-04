@@ -1,0 +1,6 @@
+{
+  "name": "Together",
+  "description": "A universal modern messenger featuring private & group chats, WeChat-style Moments feed & profile bar, voice & text translator, action red packet money sending with UPI & wallet payments (India default ₹), and customizable colors & themes.",
+  "requestFramePermissions": ["microphone", "camera"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
